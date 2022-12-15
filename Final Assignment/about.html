@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0">
+    <title>Greenscaping landscapes | About Us</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- ----------------------------------------NAVBAR----------------------------------------------------->
+    <nav class="nav nav_top">
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.png" width="250"></a>
+        </div>
+        <div class="nav_side">
+            <a href="about.html">ABOUT US</a>
+            <a href="Testimonials.html">TESTIMONIALS</a>
+            <a href="Services.html">SERVICES</a>
+            <a href="contact.html">CONTACT</a>
+            <a href="ServiceCalc/ServiceCalc.html">ONLINE ESTIMATE</a>
+            <a href="signup.html">SIGN UP</a>
+        </div>
+    </nav>
+    <!-- -------------------------------------------ABOUT US--------------------------------------------------------->
+    <div class="about_us" style="padding-top:100px;">
+        <h2>ABOUT GREEN THUMB LANDSCAPING</h2>
+        <div class="about_content">
+        
+            <p>Green Thumb Landscaping got its roots in one of the greenest, most picturesque landscapes in the world - 
+                Ireland. The lush countryside of owner and operator John Duaneís homeland is known to have ì40 Shades of Green.î
+                Today, John employs the most knowledgeable, capable and hardworking team. Each member contributes their own individual talents 
+                and strong suits, but they all have one thing in common - commitment to providing customers with quality products and courteous services. </p>
+        </div>
+        <hr>
+        <h2>WE BRING PEOPLE TOGETHER WITH NATURE </h2>
+        <p>
+            From regular lawn maintenance and installing sandstone steps to laying simple pathways and designing complex custom yards, our diverse team has the qualifications to make your vision reality.We take pride in even the smallest project, and are meticulous down to the last blade of grass. We take a customer-first approach to everything we do.Our team is creative, courteous, thorough and efficient, and communicates every step of the way to ensure your expectations are met.
+        </p>
+        </p>
+        <hr>
+        <h2>OUR LOVE FOR LANDSCAPE DRIVES US TO BE EXPERTS</h2>
+        <p>Green Thumb Landscaping treats outdoor spaces like indoor spaces. Rocks and debris are picked up and removed, entertaining areas and driveways are blown free of dust and dead and decaying vegetation is pruned away. No clean up required. When the work is done, the only thing left for you to do is kick up your feet and bask in your picture-ready surroundings. And you may not even know we were there.</p>
+    </div>
+    <!-- --------------------------------------------FEED--------------------------------------------------------->
+    <div class="feed">
+        <h2>WRITE A REVIEW</h2>
+        <div class="feed_form" method="post">
+        <form name="submit-googlesheet">
+            <input type="text" name="Name" placeholder="Name"><br>
+            <input type="email" name="Email" placeholder="Email ID"><br>
+            <input type="text" name="Number" placeholder="Contact Number"><br>
+            <textarea rows="5" cols="7" name="Review" placeholder="Write your review"></textarea><br>
+            <button type="submit">Submit</button>
+        </form>
+        </div>
+    </div>
+    <!-- --------------------------------------------FOOTER-------------------------------------------------------->
+    <footer>
+        <div class="footer_logo">
+            <a href="index.html"><img src="images/logo.png" width="250"></a>
+        </div>
+        <div class="pages">  
+            <h3>Customer Care</h3>
+            <a href="about.html">About Us</a>|
+            <a href="Testimonials.html">Testimonials</a>|
+            <a href="Services.html">Services</a>|
+            <a href="contact.html">Contact</a>
+            <a href="signup.html">SIGN UP</a>
+        </div>
+        <div class="doc">
+            <h3>Documents</h3>
+            <a href="#">Privacy Policy</a>|
+            <a href="#">Terms of Use</a>|
+            <a href="#">Refund Policy</a>
+        </div>
+        <div class="social">
+            <h3>Follow Us</h3>
+            <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        </div>
+        <div class="contact">
+            <h3>Contact Us</h3>
+            <a href="https://api.WhatsApp.com/send?phone=+910000000000" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+            <a href="tel: +10000000000"><i class="fa fa-phone" aria-hidden="true"></i></a>
+            <a href="mailto: Greenscapes@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+        </div>
+        <hr>
+       
+    </footer>
+
+<script type="text/javascript">
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzmY7HJmUEupsd8UBLj-aTxEsPcKQEWFYaxFA44IcIYrYCjanY1WcTF4zyKYXFQubtbTA/exec'
+            const form = document.forms['submit-googlesheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("Thanks you for your valuable feedback!"))
+                .catch(error => console.error('Error!', error.message))
+            })
+          
+</script>
+</body>
+</html>
